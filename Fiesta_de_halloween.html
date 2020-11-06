@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorifica fiesta de Hlloween</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo halloween.css">
+    <script src="javascripts/javascipt halloween.css"></script>
+</head>
+<body onload="sonar('nana')"> <!-- onload hace saltar el sonido de fondo pero la mayoría d elos navegadores lo bloquea, si se pone en la etiqueta audio el atributo controls puedo hacerlo sonar a volunta pero quita la sompresa-->
+    <!-- PAso 1 - Creo un container del tamaño exacto del wallpaper-->
+    <!-- Paso 2 - El container tendrá position relative y todo lo que vaya dentro position relative y coordenadas top y left-->
+    <!-- Paso 3 - Elegimos tipografía de letra-->
+    <!-- Paso 4 - Buscamos un personaje terrorífico  con gif animado-->
+    <!-- Paso 5 - Posiciono un div vacio sobre el espantapajaros-->
+    <div id="container">
+        <audio id="nana" controls> <!--audio de fondo-->
+            <source src="sonidos/FNAF 3 Ambience Extended 128 kbps.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="grito"> <!--para el susto--> 
+            <source src="sonidos/grito.mp3" type="audio/mpeg">
+        </audio>
+        <p id="titulo">Terrorifica Fiesta de Halloween</p>
+        <p>Mejor no tocar la nariz de Freddy El Oso, advertido estas</p>
+        <img id="susto" src="imagenes/sprintrap.gif" height= "1000" onclick="ocultar('susto'); parar('grito')">
+        <div id="nariz" onclick="mostrar('susto'); sonar('grito')"></div>
+        <!-- Aquí está el efecto de mostrar el fntasma oculto, al hacer click en el recuadro del espantapajaros-->
+    </div>
+</body>
+</html>

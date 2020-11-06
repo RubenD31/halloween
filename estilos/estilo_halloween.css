@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'lycanthrope';
+    src: url('../fuentes/Lycanthrope.ttf');
+}
+body {background-color: black;}
+p{position:absolute;
+        top: 140px;
+        left: 693px;
+        font-family: 'lycanthrope';
+        font-size: 20px;
+        text-shadow: 1px 1px 1px rgb(2, 34, 5);}
+#container{width: 1920px; /*ancho de fondo*/
+            height: 1200px; /*alto de fondo*/
+            background-image: url('../imagenes/office1.png');
+            margin: auto;
+            position: relative; /*la posición del container puede variar*/
+            }
+#titulo{position:absolute; /*dentro de su contenedor lo fijo en unas coordenadas*/
+        top: 50px;
+        left: 700px;
+        font-family: 'lycanthrope';
+        font-size: 2em;
+        text-shadow: 1px 1px 1px rgb(2, 34, 5);}
+#susto{position: absolute;
+        top: 0px;
+        left: 140px;
+        visibility: hidden;
+        cursor: crosshair;}
+#nariz{/*border: 1px solid white;*/
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        top: 366px;
+        left: 142px;
+        cursor: pointer;} /*para hacer que el cursor cambie*/
